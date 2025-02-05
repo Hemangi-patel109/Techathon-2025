@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <section class="container">
+        <form method="post" class="form">
+            <div class="column1">
+                <div class="input-box">
+                    <header>Save And Serve</header>
+                </div>
+            </div>
+            <div class="input-box">
+                <label>UserName: </label>
+                <input type="text" placeholder="Enter name" name="fullname">
+            </div>
+
+            <div class="column">
+                <div class="input-box">
+                    <label>No. of people can eat your food: </label>
+                    <input type="number" placeholder="Enter amount" name="amount">
+                </div>
+                    <div class="input-box">
+                        <label>Food for now? or Retail?</label>
+                        <input type="text" placeholder="Enter retail or food for now" name="parties">
+                    </div>
+            </div>
+
+            <div class="input-box">
+                <label>Time of expiring food: </label>
+                <label for="timeInput">Enter time in minutes:</label>
+                <input type="number" id="timeInput" min="1" placeholder="Minutes">
+            </div>
+
+            <button id="startButton">Submit</button>
+        </form>
+    </section>
+    <script src="timer.js"></script>
+</body>
+</html>
